@@ -40,6 +40,21 @@ class AppRoutes {
         icon: Icons.play_circle_outlined,
         name: 'Animated Container',
         screen: const AnimatedScreen()),
+    MenuOption(
+        route: 'inputs',
+        icon: Icons.input_rounded,
+        name: 'Text Inputs',
+        screen: const InputScreens()),
+    MenuOption(
+        route: 'slider',
+        icon: Icons.slow_motion_video_rounded,
+        name: 'Slider && Checks',
+        screen: const SliderScreen()),
+    MenuOption(
+        route: 'listviewbuilder',
+        icon: Icons.access_alarm,
+        name: 'Inifinite scroll / pull to refresh',
+        screen: const ListViewBuilderScreen()),
   ];
 
   static Map<String, Widget Function(BuildContext)> getAppRoutes() {
